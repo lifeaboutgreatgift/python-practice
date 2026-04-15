@@ -1,5 +1,5 @@
- #let's start with how to do comment in python then we will move to variables in this file.
- # this hashtag is used for single line comment in python.
+#let's start with how to do comment in python then we will move to variables in this file.
+#this hashtag is used for single line comment in python.
 
 """
 Hii, this is a multi line
@@ -23,3 +23,6 @@ player_cassie = 0
 # the string type is a speacial type that consists of multi chars.
 #it is in value side in variable usually to text.
 me = 'I am learning coding'
+quote = "jack of all trades, master of none, but oftentimes better than a master of one!"
+
+print(f"Price: {price}, Apple: {apple}, Player: {player_cassie}, Message: {me}, Message: {quote}")
