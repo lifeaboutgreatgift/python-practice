@@ -18,3 +18,8 @@ use underscore _ to separate words in var name.
 price = 9.99
 apple = 2
 player_cassie = 0
+
+#Now a char is single character (for example: b, ., &, 1, 6, T,etc.)
+# the string type is a speacial type that consists of multi chars.
+#it is in value side in variable usually to text.
+me = 'I am learning coding'
