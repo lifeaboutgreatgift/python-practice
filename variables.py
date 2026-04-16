@@ -26,3 +26,13 @@ me = 'I am learning coding'
 quote = "jack of all trades, master of none, but oftentimes better than a master of one!"
 
 print(f"Price: {price}, Apple: {apple}, Player: {player_cassie}, Message: {me}, Message: {quote}")
+
+# ── USER INPUT ──────────────────────────
+# input() always returns a string by default
+# to convert it to number we use int() or float()
+
+name = input("What is your name? ")
+age = int(input("How old are you? "))
+height = float(input("Your height in cm? "))
+
+print(f"Hi {name}! You are {age} years old and {height}cm tall.")
