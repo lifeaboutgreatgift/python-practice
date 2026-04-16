@@ -36,3 +36,15 @@ age = int(input("How old are you? "))
 height = float(input("Your height in cm? "))
 
 print(f"Hi {name}! You are {age} years old and {height}cm tall.")
+
+#input doesn't work! you need to input in  terminal or output section where it can receive input, it's a way you can put input in it.
+
+# ── TYPE CONVERSION ──────────────────────
+# changing one data type to another
+num_string = "25"        # this is a string "25"
+num_int = int(num_string)  # now it's integer 25
+num_float = float(num_string)  # now it's float 25.0
+
+print(type(num_string))  # <class 'str'>
+print(type(num_int))     # <class 'int'>
+print(type(num_float))   # <class 'float'>
