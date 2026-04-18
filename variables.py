@@ -57,3 +57,10 @@ is_working = False
 has_github = True
 
 print(f"Student: {is_student}, Working: {is_working}, GitHub: {has_github}")
+
+# boolean from comparison
+x = 10
+y = 5
+print(x > y)   # True  — because 10 is greater than 5
+print(x == y)  # False — because 10 is not equal to 5
+print(x != y)  # True  — because they are not equal
