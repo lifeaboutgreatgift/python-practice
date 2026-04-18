@@ -40,23 +40,53 @@ print(f"Hi {name}! You are {age} years old and {height}cm tall.")
 #input doesn't work! you need to input in  terminal or output section where it can receive input, it's a way you can put input in it.
 
 # ── TYPE CONVERSION ──────────────────────
+print("\n=== TYPE CONVERSION ===")
 # changing one data type to another
 num_string = "25"        # this is a string "25"
 num_int = int(num_string)  # now it's integer 25
 num_float = float(num_string)  # now it's float 25.0
 
-print(type(num_string))  # <class 'str'>
-print(type(num_int))     # <class 'int'>
-print(type(num_float))   # <class 'float'>
+print(f"Original: {num_string} is type {type(num_string)}")
+print(f"As Integer: {num_int} is type {type(num_int)}")
+print(f"As Float: {num_float} is type {type(num_float)}")
 
 # ── BOOLEAN ──────────────────────────────
+print("\n=== BOOLEAN VALUES ===")
 # only two values - True or False
 # used for yes/no, on/off, correct/wrong situations
 is_student = True
 is_working = False
 has_github = True
 
-print(f"Student: {is_student}, Working: {is_working}, GitHub: {has_github}")
+print(f"Student: {is_student}")
+print(f"Working: {is_working}")
+print(f"GitHub: {has_github}")
+
+# ── BOOLEAN COMPARISONS ──────────────────
+print("\n=== BOOLEAN COMPARISONS ===")
+# comparing values returns True or False
+# these are called "comparison operators"
+my_age = 26
+print(f"My age: {my_age}")
+
+# == means "is equal to" - checks if both sides are the same
+print(f"Is my age exactly 26? {my_age == 26}")
+
+# > means "greater than" - checks if left side is bigger
+print(f"Is my age greater than 20? {my_age > 20}")
+
+# < means "less than" - checks if left side is smaller
+print(f"Is my age less than 30? {my_age < 30}")
+
+# != means "not equal to" - checks if values are different
+print(f"Am I not 20 years old? {my_age != 20}")
+
+# 'not' operator reverses True to False, and False to True
+print(f"Am I NOT a student? {not is_student}")
+
+# You can combine comparisons with 'and', 'or'
+print(f"\nAm I between 20 and 30? {my_age > 20 and my_age < 30}")
+print(f"Am I either 26 or 30? {my_age == 26 or my_age == 30}")
 
 # boolean from comparison
 x = 10
