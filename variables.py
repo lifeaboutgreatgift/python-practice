@@ -48,3 +48,12 @@ num_float = float(num_string)  # now it's float 25.0
 print(type(num_string))  # <class 'str'>
 print(type(num_int))     # <class 'int'>
 print(type(num_float))   # <class 'float'>
+
+# ── BOOLEAN ──────────────────────────────
+# only two values - True or False
+# used for yes/no, on/off, correct/wrong situations
+is_student = True
+is_working = False
+has_github = True
+
+print(f"Student: {is_student}, Working: {is_working}, GitHub: {has_github}")
