@@ -30,13 +30,13 @@ print(f"Price: {price}, Apple: {apple}, Player: {player_cassie}, Message: {me}, 
 # ── USER INPUT ──────────────────────────
 # input() always returns a string by default
 # to convert it to number we use int() or float()
-
+'''
 name = input("What is your name? ")
 age = int(input("How old are you? "))
 height = float(input("Your height in cm? "))
 
 print(f"Hi {name}! You are {age} years old and {height}cm tall.")
-
+'''
 #input doesn't work! you need to input in  terminal or output section where it can receive input, it's a way you can put input in it.
 
 # ── TYPE CONVERSION ──────────────────────
@@ -94,3 +94,16 @@ y = 5
 print(x > y)   # True  — because 10 is greater than 5
 print(x == y)  # False — because 10 is not equal to 5
 print(x != y)  # True  — because they are not equal
+
+# ── NAMING CONVENTIONS ────────────────────
+# snake_case → used for variables and functions (python standard)
+player_score = 100      # ✅ correct
+playerScore = 100       # ❌ this is camelCase, used in JS not Python
+
+# UPPER_CASE → used for constants (values that never change)
+MAX_SCORE = 1000
+PI = 3.14159
+
+# descriptive names always!
+x = 9.99          # ❌ what is x??
+product_price = 9.99  # ✅ clear and descriptive
