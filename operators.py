@@ -36,3 +36,19 @@ print(is_greater)  # True
 
 is_equal = a == b
 print(is_equal)    # False
+
+# ── 3. LOGICAL OPERATORS ──────────────────
+# AND, OR, NOT — same as Discrete Math! 
+
+print(True and True)   # True
+print(True and False)  # False
+print(True or False)   # True
+print(not True)        # False
+
+# Real example:
+age = 18
+has_id = True
+
+print(age >= 18 and has_id)  # True → can enter!
+print(age >= 18 or has_id)   # True
+print(not has_id)             # False
