@@ -29,3 +29,10 @@ print(a > b)    # True  → greater than
 print(a < b)    # False → less than
 print(a >= b)   # True  → greater or equal
 print(a <= b)   # False → less or equal
+
+# Every comparison returns True or False!
+is_greater = a > b
+print(is_greater)  # True
+
+is_equal = a == b
+print(is_equal)    # False
