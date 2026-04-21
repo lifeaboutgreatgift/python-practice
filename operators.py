@@ -52,3 +52,18 @@ has_id = True
 print(age >= 18 and has_id)  # True → can enter!
 print(age >= 18 or has_id)   # True
 print(not has_id)             # False
+
+# ── 3. LOGICAL OPERATORS ──────────────────
+# AND → both must be True
+# OR  → at least one must be True  
+# NOT → flips True to False or vice versa
+
+print(True and True)   # True
+print(True and False)  # False
+print(False and False) # False
+
+print(True or False)   # True
+print(False or False)  # False
+
+print(not True)        # False
+print(not False)       # True
