@@ -97,6 +97,8 @@ print(score)        # 90
 
 score *= 2          # same as score = score * 2
 print(score)        # 180
+#this *= 2 is used for squared 9's square is 18, how it work..
+
 
 score //= 3         # same as score = score // 3
 print(score)        # 60
