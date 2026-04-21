@@ -82,3 +82,27 @@ print(age >= 18 or is_student)  # True
 
 # NOT → reverse it
 print(not is_student)           # True
+
+# ── 4. ASSIGNMENT OPERATORS ───────────────
+# shortcuts for updating variable values
+
+score = 100
+print(score)        # 100
+
+score += 10         # same as score = score + 10
+print(score)        # 110
+
+score -= 20         # same as score = score - 20
+print(score)        # 90
+
+score *= 2          # same as score = score * 2
+print(score)        # 180
+
+score //= 3         # same as score = score // 3
+print(score)        # 60
+
+score **= 2         # same as score = score ** 2
+print(score)        # 3600
+
+score %= 100        # same as score = score % 100
+print(score)        # 0
