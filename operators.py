@@ -67,3 +67,18 @@ print(False or False)  # False
 
 print(not True)        # False
 print(not False)       # True
+
+# ── REAL LIFE EXAMPLE ─────────────────────
+age = 20
+has_id = True
+is_student = False
+
+# AND → both conditions must be true
+print(age >= 18 and has_id)     # True
+print(age >= 18 and is_student) # False
+
+# OR → at least one true
+print(age >= 18 or is_student)  # True
+
+# NOT → reverse it
+print(not is_student)           # True
