@@ -11,3 +11,17 @@ else:
     print("You are a minor!")
 
 #this some topic used in javascript too
+
+#───── IF / ELSEIF / ELSE CONDITIONS ──────────────────
+
+
+
+
+time = 8
+
+if time >= 8:
+    print("You are running behind!")
+elif time == 6:
+    print("You are early bird!")
+else:
+    print("You are late>_<")
