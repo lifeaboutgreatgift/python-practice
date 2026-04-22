@@ -12,7 +12,7 @@ else:
 
 #this some topic used in javascript too
 
-#───── IF / ELSEIF / ELSE CONDITIONS ──────────────────
+#───── IF / ELIF / ELSE CONDITIONS ──────────────────
 
 
 
