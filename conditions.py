@@ -25,3 +25,14 @@ elif time == 6:
     print("You are early bird!")
 else:
     print("You are late>_<")
+
+
+iq_level = 90
+
+if iq_level == 90:
+    print("You are a dolphin")
+elif iq_level <=80:
+    print("You are good! work on it.")
+else:
+    print("You are genius")
+
