@@ -36,3 +36,4 @@ elif iq_level <=80:
 else:
     print("You are genius")
 
+#mostly this condition thing used in programming 
