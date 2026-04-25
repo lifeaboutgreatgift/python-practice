@@ -16,6 +16,7 @@ else:
 # Used everywhere in programming!
 # Login systems, games, apps, websites
 # Literally every program uses conditions!
+# Used when you have MORE than 2 options
 
 
 time = 8
@@ -37,4 +38,15 @@ elif iq_level <=80:
 else:
     print("You are genius")
 
-#mostly this condition thing used in programming 
+marks = 75
+
+if marks >= 90:
+    print("Grade: A")       # 90 and above
+elif marks >= 75:
+    print("Grade: B")       # 75 to 89
+elif marks >= 60:
+    print("Grade: C")       # 60 to 74
+elif marks >= 40:
+    print("Grade: D")       # 40 to 59
+else:
+    print("Grade: F")       # below 40
