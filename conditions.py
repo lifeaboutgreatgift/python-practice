@@ -50,3 +50,19 @@ elif marks >= 40:
     print("Grade: D")       # 40 to 59
 else:
     print("Grade: F")       # below 40
+
+
+# ── NESTED IF (if inside if) ──────────────
+# Used in login systems, security checks!
+# Example: checking username AND password
+
+username = "afroj"
+password = "1234"
+
+if username == "afroj":
+    if password == "1234":
+        print("Login successful! Welcome Afroj!")
+    else:
+        print("Wrong password!")
+else:
+    print("Username not found!")
