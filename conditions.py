@@ -13,8 +13,9 @@ else:
 #this some topic used in javascript too
 
 #───── IF / ELIF / ELSE CONDITIONS ──────────────────
-
-
+# Used everywhere in programming!
+# Login systems, games, apps, websites
+# Literally every program uses conditions!
 
 
 time = 8
