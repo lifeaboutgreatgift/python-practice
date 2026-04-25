@@ -66,3 +66,53 @@ if username == "afroj":
         print("Wrong password!")
 else:
     print("Username not found!")
+
+# ── REAL WORLD USES ───────────────────────
+
+# 1. GAME LOGIC
+player_health = 30
+
+if player_health <= 0:
+    print("Game Over!")
+elif player_health <= 30:
+    print("Warning! Low health!")    # ← this runs
+elif player_health <= 60:
+    print("Health is okay")
+else:
+    print("Full health!")
+
+# 2. SHOPPING CART
+cart_total = 1500
+has_coupon = True
+
+if cart_total >= 1000 and has_coupon:
+    discount = cart_total * 0.10    # 10% discount
+    print(f"Discount applied! You save ₹{discount}")
+    print(f"Final total: ₹{cart_total - discount}")
+else:
+    print(f"Total: ₹{cart_total}")
+
+# 3. TRAFFIC LIGHT (used in robotics/IoT!)
+signal = "green"
+
+if signal == "red":
+    print("STOP!")
+elif signal == "yellow":
+    print("SLOW DOWN!")
+elif signal == "green":
+    print("GO!")             # ← this runs
+else:
+    print("Invalid signal!")
+
+# 4. ATM MACHINE LOGIC
+balance = 5000
+withdraw = 2000
+
+if withdraw > balance:
+    print("Insufficient balance!")
+elif withdraw <= 0:
+    print("Invalid amount!")
+else:
+    balance -= withdraw      # assignment operator!
+    print(f"Withdrawn: ₹{withdraw}")
+    print(f"Remaining balance: ₹{balance}")
