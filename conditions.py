@@ -56,10 +56,10 @@ else:
 # Used in login systems, security checks!
 # Example: checking username AND password
 
-username = "afroj"
+username = "conrad"
 password = "1234"
 
-if username == "afroj":
+if username == "conrad":
     if password == "1234":
         print("Login successful! Welcome Afroj!")
     else:
