@@ -53,3 +53,34 @@ if __name__ == '__main__':
             print(factorial(number))
         except ValueError as exc:
             print(f'Invalid input: {exc}')
+
+
+# Write a program that generates a blog
+
+import random
+
+def generate_blog_post():
+    titles = [
+        "The Art of Coding",
+        "Exploring Python",
+        "Daily Life Hacks",
+        "Tech Trends 2023",
+        "My Journey in Programming"
+    ]
+    contents = [
+        "In this post, we dive into the world of programming...",
+        "Python is a versatile language that...",
+        "Here are some useful tips for everyday life...",
+        "The latest trends in technology include...",
+        "Sharing my experiences and lessons learned..."
+    ]
+    title = random.choice(titles)
+    content = random.choice(contents)
+    return f"<h1>{title}</h1><p>{content}</p>"
+
+if __name__ == '__main__':
+    blog_input = input('Enter "generate" to create a blog post: ').strip().lower()
+    if blog_input == 'generate':
+        print(generate_blog_post())
+    else:
+        print('Invalid command.')
