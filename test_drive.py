@@ -32,3 +32,24 @@ if __name__ == '__main__':
         print(result)
 
 
+# Write a program that calculates the factorial of a number
+
+def factorial(n):
+    if n < 0:
+        raise ValueError('Factorial is not defined for negative numbers.')
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+
+if __name__ == '__main__':
+    factorial_input = input('Enter a non-negative integer to compute its factorial: ').strip()
+    if not factorial_input:
+        print('No input provided for factorial.')
+    else:
+        try:
+            number = int(factorial_input)
+            print(factorial(number))
+        except ValueError as exc:
+            print(f'Invalid input: {exc}')
