@@ -18,3 +18,18 @@ for i in range(1, 6):
 # range with steps
 for i in range(0, 10, 2):
     print(i)          # prints 0,2,4,6,8
+
+#let's put some DSA problem using for loop 
+
+# ── 1. FIND MAXIMUM NUMBER IN LIST ────────
+# Problem: find biggest number without max()
+# Used in: sorting algorithms, data analysis
+
+numbers = [34, 67, 23, 89, 12, 45]
+maximum = numbers[0]      # assume first is biggest
+
+for num in numbers:
+    if num > maximum:
+        maximum = num     # update if bigger found
+
+print(f"Maximum: {maximum}")   # 89
