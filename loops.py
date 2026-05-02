@@ -33,3 +33,18 @@ for num in numbers:
         maximum = num     # update if bigger found
 
 print(f"Maximum: {maximum}")   # 89
+
+
+# ── 2. COUNT OCCURRENCES ──────────────────
+# Problem: how many times does 3 appear?
+# Used in: search engines, data processing
+
+numbers = [1, 3, 5, 3, 7, 3, 9, 3]
+count = 0
+target = 3
+
+for num in numbers:
+    if num == target:
+        count += 1
+
+print(f"{target} appears {count} times")   # 4 times
