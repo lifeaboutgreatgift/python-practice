@@ -14,3 +14,7 @@ for i in range(5):
 # range with start and end
 for i in range(1, 6):
     print(i)          # prints 1,2,3,4,5
+
+# range with steps
+for i in range(0, 10, 2):
+    print(i)          # prints 0,2,4,6,8
