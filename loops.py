@@ -48,3 +48,11 @@ for num in numbers:
         count += 1
 
 print(f"{target} appears {count} times")   # 4 times
+
+#this above two problem used in weather app ~ what is the highest temp of day etc.
+
+'''Find Maximum → any time you need 
+               "who/what is the biggest/best/highest"
+
+Count Occurrences → any time you need
+                    "how many times does X appear" '''
