@@ -56,3 +56,23 @@ print(f"{target} appears {count} times")   # 4 times
 
 Count Occurrences → any time you need
                     "how many times does X appear" '''
+
+# ── 3. REVERSE A STRING ───────────────────
+# Problem: reverse "afroj" → "jorfa"
+# Asked in almost EVERY coding interview!
+
+name = "Joey"
+reversed_name = ""
+
+for char in name:
+    reversed_name = char + reversed_name
+
+print(f"Reversed: {reversed_name}")   # jorfa
+
+name = "conrad"
+reversed_name = ""
+
+for char in name:
+    reversed_name = char + reversed_name
+
+print(f"Reversed: {reversed_name}")
