@@ -51,11 +51,13 @@ print(f"{target} appears {count} times")   # 4 times
 
 #this above two problem used in weather app ~ what is the highest temp of day etc.
 
-'''Find Maximum → any time you need 
+'''
+Find Maximum → any time you need 
                "who/what is the biggest/best/highest"
 
 Count Occurrences → any time you need
-                    "how many times does X appear" '''
+                    "how many times does X appear" 
+'''
 
 # ── 3. REVERSE A STRING ───────────────────
 # Problem: reverse "afroj" → "jorfa"
@@ -76,3 +78,29 @@ for char in name:
     reversed_name = char + reversed_name
 
 print(f"Reversed: {reversed_name}")
+
+'''
+reverse a string ~ real world ex.
+→ Encryption → reversing text to hide data
+→ DNA research → reversing gene sequences
+→ Undo feature → reverse last action
+→ Palindrome check → needs reverse first!
+→ URL shorteners → encode/decode links
+'''
+
+# ── 4. CHECK PALINDROME ───────────────────
+# Problem: is "madam" same forwards/backwards?
+# palindrome = reads same both ways
+# Used in: string processing interviews
+
+word = "madam"
+reversed_word = ""
+
+for char in word:
+    reversed_word = char + reversed_word
+
+if word == reversed_word:
+    print(f"{word} is a palindrome! ✅")
+else:
+    print(f"{word} is not a palindrome! ❌")
+
