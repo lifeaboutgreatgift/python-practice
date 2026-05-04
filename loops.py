@@ -100,9 +100,9 @@ for char in word:
     reversed_word = char + reversed_word
 
 if word == reversed_word:
-    print(f"{word} is a palindrome! ✅")
+    print(f"{word} is a palindrome! ")
 else:
-    print(f"{word} is not a palindrome! ❌")
+    print(f"{word} is not a palindrome! ")
 
 # ── 5. SUM OF DIGITS ──────────────────────
 # Problem: sum digits of 1234 → 1+2+3+4 = 10
@@ -147,3 +147,16 @@ for i in range(len(numbers)):
             numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
 
 print(f"Sorted: {numbers}")   # [11, 12, 22, 25, 34, 64, 90]
+
+# ── 8. FIBONACCI SEQUENCE ─────────────────
+# Problem: print first 10 fibonacci numbers
+# 0,1,1,2,3,5,8,13,21,34...
+# Used in: mathematics, nature patterns, DSA!
+
+a = 0
+b = 1
+
+print("Fibonacci sequence:")
+for i in range(10):
+    print(a, end=" ")
+    a, b = b, a + b   # swap trick!
