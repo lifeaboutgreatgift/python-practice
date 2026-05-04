@@ -115,3 +115,35 @@ for digit in number:
     total += int(digit)
 
 print(f"Sum of digits: {total}")   # 10
+
+# ── 6. FIND DUPLICATES ────────────────────
+# Problem: find numbers that appear twice
+# Used in: data cleaning, databases
+
+numbers = [1, 2, 3, 2, 4, 3, 5]
+seen = []
+duplicates = []
+
+for num in numbers:
+    if num in seen:
+        if num not in duplicates:
+            duplicates.append(num)
+    else:
+        seen.append(num)
+
+print(f"Duplicates: {duplicates}")   # [2, 3]
+
+# ── 7. BUBBLE SORT ────────────────────────
+# Problem: sort list from smallest to biggest
+# Classic DSA sorting algorithm!
+# Used in: databases, search results
+
+numbers = [64, 34, 25, 12, 22, 11, 90]
+
+for i in range(len(numbers)):
+    for j in range(0, len(numbers)-i-1):
+        if numbers[j] > numbers[j+1]:
+            # swap them!
+            numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
+
+print(f"Sorted: {numbers}")   # [11, 12, 22, 25, 34, 64, 90]
