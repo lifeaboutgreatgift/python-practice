@@ -104,3 +104,14 @@ if word == reversed_word:
 else:
     print(f"{word} is not a palindrome! ❌")
 
+# ── 5. SUM OF DIGITS ──────────────────────
+# Problem: sum digits of 1234 → 1+2+3+4 = 10
+# Asked in beginner coding interviews!
+
+number = "1234"
+total = 0
+
+for digit in number:
+    total += int(digit)
+
+print(f"Sum of digits: {total}")   # 10
