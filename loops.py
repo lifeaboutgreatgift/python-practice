@@ -157,6 +157,8 @@ a = 0
 b = 1
 
 print("Fibonacci sequence:")
-for i in range(10):
+for i in range(21):
     print(a, end=" ")
     a, b = b, a + b   # swap trick!
+print()
+
