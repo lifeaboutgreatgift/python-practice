@@ -160,5 +160,11 @@ print("Fibonacci sequence:")
 for i in range(21):
     print(a, end=" ")
     a, b = b, a + b   # swap trick!
+    #this [a, b = b, a + b] is a trick called "Tuple Unpacking", python calculates the entire right side first then assigns the values. 
+    # 0, 1, (0 + 1)1, (1 + 1)2, (2 + 1)3, .... so first two digit would be always a, b then third digit would be c that is ~ a + b = c... b+c = d... etc. 
 print()
 
+a, b = 0, 1
+for i in range(10):
+    print(f"{a} + {b} = {a + b}") # This shows the work!
+    a, b = b, a + b
