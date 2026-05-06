@@ -170,3 +170,4 @@ for i in range(10):
     print(f"{a} + {b} = {a + b}") # This shows the work!
     a, b = b, a + b
 
+#we learn more about it >>
