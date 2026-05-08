@@ -200,3 +200,34 @@ for i in range(10):
     if i % 2 == 0: #In this line i represent numbers 1, 2, 3, ... % symbol is modulus that shows remainder.If remainder = 0 it means even number.
         continue      # skip even numbers
     print(i)          # only prints odd: 1,3,5,7,9
+
+# ── 4. PASS ───────────────────────────────
+# does nothing! placeholder for future code
+for i in range(5):
+    if i == 3:
+        pass          # will add code here later
+    print(i)          # prints all numbers
+
+# ── REAL WORLD EXAMPLES ───────────────────
+
+# 1. ATM MACHINE
+balance = 5000
+while True:
+    print(f"\nBalance: {balance}")
+    amount = int(input("How much to withdraw? "))
+    
+    if amount > balance:
+        print("Insufficient balance!")
+        continue      # ask again!
+    elif amount <= 0:
+        print("Invalid amount!")
+        continue
+    else:
+        balance -= amount
+        print(f"Withdrawn! Remaining: {balance}")
+        
+    another = input("Another withdrawal? (yes/no): ")
+    if another == "no":
+        break         # exit ATM!
+
+print("Thank you! Goodbye!")
