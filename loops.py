@@ -170,7 +170,7 @@ for i in range(10):
     print(f"{a} + {b} = {a + b}") # This shows the work!
     a, b = b, a + b
 
-# ── WHILE LOOP DEEP DIVE ──────────────────
+# ── WHILE LOOP ──────────────────
 # while loop = keep going UNTIL condition false
 
 # ── 1. BASIC WHILE ────────────────────────
@@ -179,3 +179,24 @@ while count <= 5:
     print(f"Count: {count}")
     count += 1        # without this = infinite loop!
     #count += 1 ~ without this it will keep print infinite loop like count: 1;
+
+# ── 2. BREAK ──────────────────────────────
+# exit loop completely when condition met
+
+print("Break example:")
+count = 0
+while True:           # infinite loop!
+    count += 1
+    print(count)
+    if count == 5: #Here used comparison operator - equal to, it is keep count till we reach at number 5 (strictly!)
+        break         # stops at 5!
+
+
+# ── 3. CONTINUE ───────────────────────────
+# skip current iteration, keep going
+
+print("Continue example:")
+for i in range(10):
+    if i % 2 == 0: #In this line i represent numbers 1, 2, 3, ... % symbol is modulus that shows remainder.If remainder = 0 it means even number.
+        continue      # skip even numbers
+    print(i)          # only prints odd: 1,3,5,7,9
