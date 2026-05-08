@@ -170,3 +170,12 @@ for i in range(10):
     print(f"{a} + {b} = {a + b}") # This shows the work!
     a, b = b, a + b
 
+# ── WHILE LOOP DEEP DIVE ──────────────────
+# while loop = keep going UNTIL condition false
+
+# ── 1. BASIC WHILE ────────────────────────
+count = 1
+while count <= 5:
+    print(f"Count: {count}")
+    count += 1        # without this = infinite loop!
+    #count += 1 ~ without this it will keep print infinite loop like count: 1;
