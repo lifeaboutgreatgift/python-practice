@@ -38,3 +38,53 @@ train_distance = 300    # km
 train_time = 3          # hours
 train_speed = calculate_speed(train_distance, train_time)
 print(f"Train speed: {train_speed} km/h")
+
+# ── 4. VELOCITY ───────────────────────────
+# Velocity = displacement / time
+
+def calculate_velocity(displacement, time):
+    if time == 0:
+        return 0
+    return displacement / time
+
+# Belly walking example
+belly_displacement = 0   # back to start
+belly_time = 8           # seconds
+belly_velocity = calculate_velocity(belly_displacement, belly_time)
+print(f"Belly velocity: {belly_velocity} m/s")
+
+# ── 5. INTERACTIVE CALCULATOR ─────────────
+# Let user calculate speed and velocity!
+
+print("\n── MOTION CALCULATOR ──")
+print("1. Speed Calculator")
+print("2. Velocity Calculator")
+print("3. Both")
+
+choice = input("Choose (1/2/3): ")
+
+if choice == "1":
+    d = float(input("Enter distance (m): "))
+    t = float(input("Enter time (s): "))
+    speed = calculate_speed(d, t)
+    print(f"Speed = {speed} m/s")
+   
+elif choice == "2":
+    disp = float(input("Enter displacement (m): "))
+    t = float(input("Enter time (s): "))
+    velocity = calculate_velocity(disp, t)
+    print(f"Velocity = {velocity} m/s")
+
+elif choice == "3":
+    d = float(input("Enter total distance (m): "))
+    disp = float(input("Enter displacement (m): "))
+    t = float(input("Enter time (s): "))
+    speed = calculate_speed(d, t)
+    velocity = calculate_velocity(disp, t)
+    print(f"Speed = {speed} m/s")
+    print(f"Velocity = {velocity} m/s")
+    if speed == abs(velocity):
+        print("Speed equals velocity magnitude!")
+        print("Straight line motion!")
+    else:
+         print("Invalid choice!")
