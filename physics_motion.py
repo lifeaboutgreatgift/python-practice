@@ -88,3 +88,23 @@ elif choice == "3":
         print("Straight line motion!")
     else:
          print("Invalid choice!")
+
+# ── 6. POSITION TRACKER ───────────────────
+# Track someone moving step by step!
+
+print("\n── POSITION TRACKER ──")
+position = 0
+total_distance = 0
+steps = int(input("How many moves? "))
+
+for i in range(steps):
+    move = float(input(f"Move {i+1} (+ east, - west): "))
+    position += move
+    total_distance += abs(move)   # abs = always positive!
+    print(f"Current position: {position}m")
+    print(f"Total distance so far: {total_distance}m")
+
+print(f"\nFinal position: {position}m")
+print(f"Total distance: {total_distance}m")
+print(f"Displacement: {position}m")
+print(f"Are they same? {position == total_distance}")
