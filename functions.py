@@ -42,3 +42,36 @@ def add(a, b):
 
 result = add(5, 3)
 print(f"5 + 3 = {result}")    # 8
+
+# ── 4. MULTIPLE PARAMETERS ────────────────
+def calculate_grade(name, marks):
+    if marks >= 90:
+        grade = "A"
+    elif marks >= 75:
+        grade = "B"
+    elif marks >= 60:
+        grade = "C"
+    elif marks >= 40:
+        grade = "D"
+    else:
+        grade = "F"
+    return f"{name} scored {marks} → Grade {grade}"
+
+print(calculate_grade("Ava", 85))
+print(calculate_grade("Aman", 92))
+print(calculate_grade("Bob", 45))
+
+# ── 5. DEFAULT PARAMETERS ─────────────────
+# default = used when no value given
+
+def greet_language(name, language="English"):
+    if language == "English":
+        print(f"Hello {name}!")
+    elif language == "Hindi":
+        print(f"Namaste {name}!")
+    elif language == "Spanish":
+        print(f"Hola {name}!")
+
+greet_language("Aditi")              # uses default English
+greet_language("Aditi", "Hindi")     # uses Hindi
+greet_language("Aditi", "Spanish")   # uses Spanish
