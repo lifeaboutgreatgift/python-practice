@@ -43,6 +43,12 @@ def add(a, b):
 result = add(5, 3)
 print(f"5 + 3 = {result}")    # 8
 
+def divide(a, b):
+    return a / b
+
+result = divide( 1728, 12)
+print(f"1728 / 12 = {result}")
+
 # ── 4. MULTIPLE PARAMETERS ────────────────
 def calculate_grade(name, marks):
     if marks >= 90:
