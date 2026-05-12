@@ -82,4 +82,6 @@ greet_language("Aditi")              # uses default English
 greet_language("Aditi", "Hindi")     # uses Hindi
 greet_language("Aditi", "Spanish")   # uses Spanish
 
-#learn more about it
+
+# have to learn logic in python.
+# it is little difficult .
